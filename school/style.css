@@ -1,0 +1,165 @@
+        /* Основные стили */
+        body {
+            background-color: #faf5e0;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Playfair Display', serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стили заголовка */
+        h1 {
+            color: #e68b67;
+            font-family: sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #e68b67;
+            font-family: serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        a {
+            font-family: 'Bradley Hand', sans-serif;
+            font-size: 14px;
+            color: #087167;
+            text-decoration: none;
+          }
+
+        /* Стили формы */
+        form {
+            display: inline
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #640007;
+            font-weight: 500;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e57cb3;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #d6629e;
+            box-shadow: 0 0 5px rgba(214, 98, 158, 0.3);
+        }
+
+        /* Стили кнопок */
+        .button-container {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #86c7d6;
+            color: #087167;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 30px;
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Playfair Display', serif;
+        }
+
+        button:hover {
+            background-color: #86c7d6;
+            ;
+            transform: translateY(-2px);
+            font-size: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        
+
+        /* Стили для ссылки возврата */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #334553;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e68b67;
+            color: #faf5e0;
+            font-weight: bold;
+        }
+        td {
+            color: #087167;
+        }
+
+        /* Стили для сообщений */
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+            
+            .button-container {
+                grid-column: 1;
+            }
+        }
